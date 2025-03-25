@@ -193,7 +193,7 @@ img {
 
 .maggie {
   font-weight: bold !important;
-  color: rgb(239 192 5);
+  color: #ed7014;
 }
 
 .highlight {
@@ -235,4 +235,16 @@ img#overall {
 
 #glide-container {
   max-width: 800px;
+}
+
+.framework {
+  align-content: center;
+}
+img.figure {
+  margin-top: 0;
+}
+
+.framework img {
+  width: 100%;
+  object-fit: contain;
 }

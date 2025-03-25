@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>CVPR'24 - MaGGIe</title>
-    <meta name="description" content="MaGGIe: Mask Guided Gradual Human Instance Matting. Accepted to CVPR 2024" />
+    <title>CVPR'25 - CoLLM</title>
+    <meta name="description" content="CoLLM: A Large Language Model for Composed Image Retrieval. Accepted to CVPR 2025" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
@@ -22,7 +22,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
   </head>
-  <body onload="selectSampleVideo('sample-hard');selectComparisonVideo('three-people');">
+  <body>
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
@@ -44,6 +44,12 @@
               More Research
             </a>
             <div class="navbar-dropdown">
+              <a class="navbar-item" href="https://github.com/vkhoi/cora_cvpr24" target="_blank">
+                CORA - CVPR'24
+              </a>
+              <a class="navbar-item" href="https://maggie-matt.github.io/" target="_blank">
+                MaGGIe - CVPR'24
+              </a>
               <a class="navbar-item" href="https://simpson-cvpr23.github.io/" target="_blank">
                 SimpSON - CVPR'23
               </a>
@@ -63,48 +69,63 @@
         <div class="container is-max-desktop">
           <div class="columns is-centered">
             <div class="column has-text-centered">
-              <h1 class="title is-1 publication-title"><img src="images/maggie.png" id="maggie-icon"/><span class="maggie">MaGGIe</span>: <span class="maggie">Ma</span>sk <span class="maggie">G</span>uided <span class="maggie">G</span>radual Human <span class="maggie">I</span>nstanc<span class="maggie">e</span> Matting</h1>
-              <div class="is-size-3" id="conference">CVPR 2024</div>
+              <h1 class="title is-1 publication-title">CoLLM: A Large Language Model for Composed Image Retrieval</h1>
+              <div class="is-size-3" id="conference">CVPR 2025</div>
               <br/>
               <div class="is-size-4 publication-authors">
                 <span class="author-block">
-                  <a href="https://hmchuong.github.io">Chuong Huynh</a><sup>1</sup>
+                  <a href="https://hmchuong.github.io">Chuong Huynh</a><sup>1,*</sup>
                 </span>
                 <span class="author-block">
-                  <a href="https://sites.google.com/view/seoungwugoh/">Seoung Wug Oh</a><sup>2</sup>
+                  <a href="https://viyjy.github.io/">Jinyu Yang</a><sup>2,†</sup>
+                </span>
+                <span class="author-block">
+                  <a href="https://scholar.google.com/citations?user=BGjEep8AAAAJ&hl=en">Ashish Tawari</a><sup>2</sup>
+                </span>
+                <span class="author-block">
+                  <a href="https://scholar.google.com/citations?hl=en&user=p8gsO3gAAAAJ">Mubarak Shah</a><sup>2,3</sup>
+                </span>
+                <span class="author-block">
+                  <a href="https://scholar.google.com/citations?hl=en&user=P0EbpmgAAAAJ">Son Tran</a><sup>2</sup>
+                </span>
+              </div>
+              <div class="is-size-4 publication-authors">
+                <span class="author-block">
+                  <a href="https://www.raffayhamid.com/">Raffay Hamid</a><sup>2</sup>
+                </span>
+                <span class="author-block">
+                  <a href="https://scholar.google.com/citations?user=DrNeo_0AAAAJ&hl=en">Trishul Chilimbi</a><sup>2</sup>
                 </span>
                 <span class="author-block">
                   <a href="http://www.cs.umd.edu/~abhinav">Abhinav Shrivastava</a><sup>1</sup>
                 </span>
-                <span class="author-block">
-                  <a href="https://joonyoung-cv.github.io/">Joon-Young Lee</a><sup>2</sup>
-                </span>
               </div>
+              
               <br/>
               <div class="is-size-4 publication-authors">
                 <span class="author-block company-block"><sup>1</sup>University of Maryland, College Park</span>
-                <span class="author-block company-block"><sup>2</sup>Adobe Research</span>
+                <span class="author-block company-block" style="flex:0.6"><sup>2</sup>Amazon</span>
+              </div>
+              <div class="is-size-4 publication-authors">
+                <span class="author-block company-block"><sup>3</sup>Center for Research in Computer Vision, University of Central Florida</span>
+              </div>
+              <div class="is-size-5">
+                <span><em>( <sup>*</sup>This work was done during internship at Amazon. <sup>†</sup>Project Lead)</em></span>
               </div>
               <br/>
               <div class="column has-text-centered">
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2404.16035" class="external-link button is-normal is-rounded is-dark paper-link">
+                  <a href="" class="external-link button is-normal is-rounded is-dark paper-link">
                     <span class="icon">
                       <i class="ai ai-arxiv"></i>
                     </span>
-                    <span>arXiv</span>
+                    <span>arXiv (soon)</span>
                   </a>
                 </span>
                 <span class="link-block">
-                  <a href="/" class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <img src="dist/hf-logo.svg"/>
-                    </span>
-                    <span>HF Demo (soon)</span>
-                  </a>
                 </span>
                 <span class="link-block">
-                  <a href="https://github.com/hmchuong/MaGGIe" class="external-link button is-normal is-rounded is-dark">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <svg class="svg-inline--fa fa-github fa-w-16" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg=""><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg><!-- <i class="fab fa-github"></i> Font Awesome fontawesome.com -->
                     </span>
@@ -113,7 +134,7 @@
                 </span>
                 
                 <span class="link-block">
-                <a href="https://huggingface.co/datasets/chuonghm/MaGGIe-HIM"
+                <a href=""
                     class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <!-- <i class="far fa-images"></i> -->
@@ -134,11 +155,9 @@
     <section class="hero">
       <div class="hero-body">
         <div class="container is-max-desktop">
-          <video id="teaser-player" style="width: 100%" autoplay muted defaultMuted playsinline webkit-playsinline onended="loadTeaser()">
-            <source src="videos/teaser.mp4" type="video/mp4">
-          </video>
+          <img id="overall" src="images/cir.png" style="width: 80%"/>
           <h2 class="subtitle has-text-centered">
-            <span class="maggie">MaGGIe</span> efficiently predicts high-quality human instance mattes from coarse binary masks for both image and video input. (source: <a href="https://www.pexels.com/" target="_blank">pexels.com</a>)
+            <span class="maggie">CoLLM</span>: An LLM for retrieving the most relevant image by composing a reference image with textual modifications.
           </h2>
         </div>
       </div>
@@ -153,33 +172,24 @@
               <h2 class="title is-3">Abstract</h2>
               <div class="content has-text-justified">
                 <p>
-                  Human matting is a foundation task in image and video processing where human foreground pixels are extracted from the input. Prior works either improve the accuracy by additional guidance or improve the temporal consistency of a single instance across frames. We propose a new framework <span class="maggie">MaGGIe</span>, Masked Guided Gradual Human Instance Matting, which predicts alpha mattes progressively for each human instances while maintaining the <span class="highlight">computational efficiency</span>,  <span class="highlight">output accuracy</span>, and <span class="highlight">frame-by-frame consistency</span>. Our method leverages modern architectures, including transformer attention and sparse convolution, to output all instance mattes simultaneously without exploding memory and latency. Although keeping constant inference costs in the multiple-instance scenario, our framework achieves robust and versatile performance on our proposed synthesized benchmarks. With the higher quality image and video matting benchmarks, the novel multi-instance synthesis approach from publicly available sources is introduced to increase the generalization of models in real-world scenarios.
-                </p>
+                  Composed Image Retrieval (CIR) is a complex task that aims to retrieve images based on a multimodal query. Typical training data consists of triplets containing a reference image, a textual description of desired modifications, and the target image, which are expensive and time-consuming to acquire. The scarcity of CIR datasets has led to zero-shot approaches utilizing synthetic triplets or leveraging vision-language models (VLMs) with ubiquitous web-crawled image-caption pairs. However, these methods have significant limitations: synthetic triplets suffer from limited scale, lack of diversity, and unnatural modification text, while image-caption pairs hinder joint embedding learning of the multimodal query due to the absence of triplet data Moreover, existing approaches struggle with complex and nuanced modification texts that demand sophisticated fusion and understanding of vision and language modalities. We present <span class="maggie">CoLLM</span>, a one-stop framework that effectively addresses these limitations. <span class="highlight">Our approach generates triplets on-the-fly from image-caption pairs, enabling supervised training without manual annotation.</span> We leverage Large Language Models (LLMs) to generate joint embeddings of reference images and modification texts, facilitating deeper multimodal fusion. Additionally, <span class="highlight">we introduce <span class="maggie">Multi-Text CIR (MTCIR)</span>, a large-scale dataset</span> comprising 3.4M samples, and <span class="highlight"><span class="maggie">refine existing CIR benchmarks</span> (CIRR and Fashion-IQ) to enhance evaluation reliability</span>. Experimental results demonstrate that CoLLM achieves state-of-the-art performance across multiple CIR benchmarks and settings. MTCIR yields competitive results, with up to 15% performance improvement. Our refined benchmarks provide more reliable evaluation metrics for CIR models, contributing to the advancement of this important field.
               </div>
-              <img class="image" src="images/mem_speed.png"/>
             </div>
           </div>
           <div class="columns is-centered">
             <div class="column has-text-centered">
-              <h2 class="title is-3"><span class="maggie">MaGGIe</span> framework</h2>
+              <h2 class="title is-3"><span class="maggie">CoLLM</span> framework</h2>
               <div class="content has-text-justified">
                 <p>
-                  We design an efficient framework that leverages <span class="highlight">Transformer attention</span> and <span class="highlight">Sparse convolution</span> to progressively predict human instance mattes from binary masks:
+                  Our model is flexibly trained with <span class="highlight"> (a) image-caption pairs</span> and <span class="highlight"> (b) Composed image retrieval triplets</span>. Image and text in the training query are synthesized by interpolated between similar in-batch image-caption pairs.
                 </p>
               </div>
-              <img id="overall" src="images/overall_a.png" style="width: 100%"/>
-              <div class="columns is-centered inside">
-                <div class="column">
-                  <a class="button is-normal is-light modal-button js-modal-trigger" data-target="module-inst-matte-dec">Instance Matte Decoder</a>
+              <div class="columns is-centered">
+                <div class="column framework">
+                  <img id="overall" src="images/training.png" style="width: 100%; object-fit: contain;"/>
                 </div>
-                <div class="column">
-                  <a class="button is-normal is-light modal-button js-modal-trigger" data-target="module-inst-spec">Dense-image to Sparse-instance</a>
-                </div>
-                <div class="column">
-                  <a class="button is-normal is-light modal-button js-modal-trigger" data-target="module-instance-guidance">Instance Guidance</a>
-                </div>
-                <div class="column">
-                  <a class="button is-normal is-light modal-button js-modal-trigger" data-target="module-detail-aggre">Detail Aggregation</a>
+                <div class="column framework">
+                  <img id="synthesis" src="images/synthesis.png" style="width: 100%; object-fit: contain;"/>
                 </div>
               </div>
             </div>
@@ -187,47 +197,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Modals for framework details-->
-    <div class="modal" id="module-instance-guidance">
-      <div class="modal-background"></div>
-      <div class="modal-content">
-        <p class="image">
-          <img src="images/instance_guidance.png" alt="">
-        </p>
-      </div>
-      <button class="modal-close is-large" aria-label="close"></button>
-    </div>
-
-    <div class="modal" id="module-inst-matte-dec">
-      <div class="modal-background"></div>
-      <div class="modal-content">
-        <p class="image">
-          <img src="images/inst_matte_dec.png" alt="">
-        </p>
-      </div>
-      <button class="modal-close is-large" aria-label="close"></button>
-    </div>
-
-    <div class="modal" id="module-detail-aggre">
-      <div class="modal-background"></div>
-      <div class="modal-content">
-        <p class="image">
-          <img src="images/detail_aggre.png" alt="">
-        </p>
-      </div>
-      <button class="modal-close is-large" aria-label="close"></button>
-    </div>
-
-    <div class="modal" id="module-inst-spec">
-      <div class="modal-background"></div>
-      <div class="modal-content">
-        <p class="image">
-          <img src="images/inst_spec.png" alt="">
-        </p>
-      </div>
-      <button class="modal-close is-large" aria-label="close"></button>
-    </div>
     
     <!-- For datasets-->
     <section class="hero">
@@ -235,110 +204,38 @@
         <div class="container is-max-desktop">
           <div class="columns is-centered">
             <div class="column ">
-              <h2 class="title is-3 has-text-centered"><span class="maggie">MaGGIe</span> Human Instance Matting Dataset</h2>
-              <div class="columns">
-                <div class="column">
-                  <h3 class="title is-4 sub-dataset">I-HIM50K</h3>
-                  <div class="content has-text-justified">
-                    <p>
-                      We synthesized the human image instance matting dataset from <a href="https://github.com/nowsyn/sparsemat" target="_blank">HHM50K</a> as foreground and <a href="https://github.com/JizhiziLi/GFM" target="_blank">BG20K</a> as background.
-                    </p>
-                  </div>
-                  <div class="container" id="glide-container">
-                    <div class="glide" id="dataset-him50k">
-                      <div data-glide-el="track" class="glide__track">
-                        <ul class="glide__slides">
-                          <li class="glide__slide">
-                            <img src="images/him50k_1.png">
-                          </li>
-                          <li class="glide__slide">
-                            <img src="images/him50k_2.png">
-                          </li>
-                          <li class="glide__slide">
-                            <img src="images/him50k_3.png">
-                          </li>
-                          <li class="glide__slide">
-                            <img src="images/him50k_4.png">
-                          </li>
-                        </ul>
-                      </div>
-          
-                      <div class="glide__arrows" data-glide-el="controls">
-                        <span class="glide__arrow glide__arrow--left" data-glide-dir="<"><img src="dist/arrow-left-circle-fill.svg"/></span>
-                        <span class="glide__arrow glide__arrow--right" data-glide-dir=">"><img src="dist/arrow-right-circle-fill.svg"/></span>
-                      </div>
-                      <div class="glide__bullets" data-glide-el="controls[nav]">
-                        <span class="glide__bullet" data-glide-dir="=0"></span>
-                        <span class="glide__bullet" data-glide-dir="=1"></span>
-                        <span class="glide__bullet" data-glide-dir="=2"></span>
-                        <span class="glide__bullet" data-glide-dir="=3"></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <h2 class="title is-3 has-text-centered"><span class="maggie">MTCIR:</span> Multi-Text Composed Image Retrieval Dataset</h2>
+              <div class="content has-text-justified">
+                <p>
+                  We create <span class="highlight">the largest public dataset</span> with diverse samples: 3.4M triplets and 17.7M human-aligned modification texts generated by <a href="https://claude.ai/" target="_blank">Claude 3 Sonnet</a>.
+                </p>
+                <img class="figure" src="images/mtcir.png" style="width: 100%;"/>
               </div>
-              <div class="columns">
-                <div class="column">
-                  <h3 class="title is-4 sub-dataset">M-HIM2K</h3>
-                  <div class="content has-text-justified">
-                    <p>
-                      We generate different masks from <a href="https://github.com/facebookresearch/detectron2/blob/main/MODEL_ZOO.md#coco-instance-segmentation-baselines-with-mask-r-cnn" target="_blank">COCO-pretrained Mask-RCNN</a> to benchmark the robustness of the models.
-                    </p>
+            </div>
+          </div>
+          <div class="columns is-centered">
+            <div class="column ">
+              <h2 class="title is-3 has-text-centered"><span class="maggie">Refined Benchmarks:</span> CIRR and Fashion-IQ</h2>
+              <div class="content has-text-justified">
+                <p>
+                  We enhance refined benchmarks by rewrite modification texts of ambiguous samples with <a href="https://claude.ai/" target="_blank">Claude 3 Sonnet</a>. The comprehensive pipeline is shown on the left, and an refined example is shown on the right:
+                </p>
+                <div class="columns is-centered">
+                  <div class="column framework">
+                    <img id="overall" src="images/benchmark_pipeline.png"/>
                   </div>
-                  <div class="columns is-gapless">
-                    <div class="column">
-                      <img src="images/m_him2k_1.png"/>
-                    </div>
-                    <div class="column">
-                      <img src="images/m_him2k_2.png"/>
-                    </div>
-                    <div class="column">
-                      <img src="images/m_him2k_3.png"/>
-                    </div>
-                    <div class="column">
-                      <img src="images/m_him2k_4.png"/>
-                    </div>
+                  <div class="column framework">
+                    <img id="synthesis" src="images/benchmark_examples.png"/>
                   </div>
                 </div>
-              </div>
-              <div class="columns">
-                <div class="column">
-                  <h3 class="title is-4 sub-dataset">V-HIM2K5 and V-HIM60</h3>
-                  <div class="content has-text-justified">
-                    <p>
-                      We synthesized the human video instance matting dataset from public datasets: <a href="https://grail.cs.washington.edu/projects/background-matting-v2/#/datasets" target="_blank">VideoMatte240K</a>, <a href="https://github.com/yunkezhang/TCVOM#videomatting108-dataset" target="_blank">VM108</a>, and <a href="https://github.com/TiantianWang/VideoMatting-CRGNN" target="_blank">CRGNN</a> with three difficulty levels: Easy, Medium, and Hard.
-                    </p>
-                  </div>
-                  <div class="columns inside has-text-centered is-vcentered">
-                    <div class="column is-one-quarter"><b> Choose difficulty level: </b></div>
-                    <div class="column columns is-centered inside buttons are-normal">
-                      <div class="column">
-                        <button class='button btn-sample-video'  onclick="selectSampleVideo('sample-easy')">Easy</button>
-                      </div>
-                      <div class="column">
-                        <button class='button btn-sample-video'  onclick="selectSampleVideo('sample-medium')">Medium</button>
-                      </div>
-                      <div class="column">
-                        <button class='button btn-sample-video'  onclick="selectSampleVideo('sample-hard')">Hard</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="columns is-variable is-1" id="sample-video-div">
-                    <div class="column">
-                      <video id="sample-player1"  autoplay muted defaultMuted playsinline webkit-playsinline onended="">
-                        <source id="sample-src1" src="videos/sample-hard/input.mp4" type="video/mp4">
-                      </video>
-                      <p id="sample-caption" style="margin-top: 5px; text-align: center; width: 100%">Video</p>
-                    </div>
-                    <div class="column">
-                      <video id="sample-player2"  autoplay muted defaultMuted playsinline webkit-playsinline  onended="loadSample()">
-                        <source id="sample-src2" src="videos/sample-hard/matte.mp4" type="video/mp4">
-                      </video>
-                      <p id="sample-caption" style="margin-top: 5px; text-align: center; width: 100%">Ground-truth</p>
-                    </div>
-                  </div>
-                  
-                </div>
+                <p>
+                  Examples of "good" samples kept in the refined benchmarks: CIRR (left) and Fashion-IQ (right)
+                </p>
+                <img class="figure" src="images/refined_good.png" style="width: 100%;"/>
+                <p>
+                  Examples of "bad" samples and regenerated texts in the refined benchmarks: CIRR (left) and Fashion-IQ (right)
+                </p>
+                <img class="figure" src="images/refined_bad.png" style="width: 100%;"/>
               </div>
             </div>
           </div>
@@ -346,228 +243,81 @@
       </div>
     </section>
 
-    <!-- For the image results -->
+    <!-- For datasets-->
     <section class="hero">
       <div class="hero-body">
         <div class="container is-max-desktop">
           <div class="columns is-centered">
-            <div class="column has-text-centered">
-              <h2 class="title is-3">Image qualitative results</h2>
+            <div class="column ">
+              <h2 class="title is-3 has-text-centered"><span class="maggie">CoLLM</span> outperforms previous methods</h2>
               <div class="content has-text-justified">
                 <p>
-                  Without training on real image data, our method can work well on natural images. We compare our method with the state-of-the-art methods on the image human instance matting task. <span style="font-style: italic;color:red">(Click to open image in full size)</span>
+                  Our framework achieves the highest Recall Sum at {1,10,50} for CIRR and {10, 50} for Fashion-IQ with two training scenarios: (i) without triplet data and (ii) with synthetic triplet data (our MTCIR).
                 </p>
-              </div>
-              <div class="columns is-gapless">
-                <div class="column">
-                  <a class="modal-button js-modal-trigger" data-target="result-image-1">
-                    <img src="images/result_image1.png"/>
-                  </a>
-                </div>
-                <div class="column">
-                  <a class="modal-button js-modal-trigger" data-target="result-image-2">
-                    <img src="images/result_image2.png"/>
-                  </a>
-                </div>
-                <div class="column">
-                  <a class="modal-button js-modal-trigger" data-target="result-image-3">
-                    <img src="images/result_image3.png"/>
-                  </a>
-                </div>
-              </div>
-              <div class="columns is-gapless">
-                <div class="column">
-                  <a class="modal-button js-modal-trigger" data-target="result-image-4">
-                    <img src="images/result_image4.png"/>
-                  </a>
-                </div>
-                <div class="column">
-                  <a class="modal-button js-modal-trigger" data-target="result-image-5">
-                    <img src="images/result_image5.png"/>
-                  </a>
-                </div>
-                <div class="column">
-                  <a class="modal-button js-modal-trigger" data-target="result-image-6">
-                    <img src="images/result_image6.png"/>
-                  </a>
+                <div class="columns is-centered">
+                  <img  class="figure" src="images/quantitative.png" style="width: 75%;"/>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Modals for image results details-->
-    <div class="modal" id="result-image-1">
-      <div class="modal-background"></div>
-      <div class="modal-content">
-        <p class="image">
-          <img src="images/result_image1.png" alt="">
-        </p>
-      </div>
-      <button class="modal-close is-large" aria-label="close"></button>
-    </div>
-
-    <div class="modal" id="result-image-2">
-      <div class="modal-background"></div>
-      <div class="modal-content">
-        <p class="image">
-          <img src="images/result_image2.png" alt="">
-        </p>
-      </div>
-      <button class="modal-close is-large" aria-label="close"></button>
-    </div>
-
-    <div class="modal" id="result-image-3">
-      <div class="modal-background"></div>
-      <div class="modal-content">
-        <p class="image">
-          <img src="images/result_image3.png" alt="">
-        </p>
-      </div>
-      <button class="modal-close is-large" aria-label="close"></button>
-    </div>
-
-    <div class="modal" id="result-image-4">
-      <div class="modal-background"></div>
-      <div class="modal-content">
-        <p class="image">
-          <img src="images/result_image4.png" alt="">
-        </p>
-      </div>
-      <button class="modal-close is-large" aria-label="close"></button>
-    </div>
-
-    <div class="modal" id="result-image-5">
-      <div class="modal-background"></div>
-      <div class="modal-content">
-        <p class="image">
-          <img src="images/result_image5.png" alt="">
-        </p>
-      </div>
-      <button class="modal-close is-large" aria-label="close"></button>
-    </div>
-
-    <div class="modal" id="result-image-6">
-      <div class="modal-background"></div>
-      <div class="modal-content">
-        <p class="image">
-          <img src="images/result_image6.png" alt="">
-        </p>
-      </div>
-      <button class="modal-close is-large" aria-label="close"></button>
-    </div>
-
-    <!-- For the comparison video -->
-    <section class="hero">
-      <div class="hero-body">
-        <div class="container is-max-desktop">
           <div class="columns is-centered">
-            <div class="column has-text-centered">
-              <h2 class="title is-3">Video qualitative results</h2>
+            <div class="column ">
+              <h2 class="title is-3 has-text-centered"><span class="maggie">CoLLM</span> trained on MTCIR has better CIR capacity.</h2>
               <div class="content has-text-justified">
                 <p>
-                  Without training on real video data, our method can generalize well to real-world scenarios. We compare our method with the state-of-the-art methods on the video human instance matting task.
+                  Our model shows better composed query understanding in both CIRR and Fashion-IQ benchmarks, even without training on triplets:
                 </p>
               </div>
-              <div class="columns is-variable is-1" id="comparison-video-div">
-                <div class="column">
-                  <video id="comparison-player1"  autoplay muted defaultMuted playsinline webkit-playsinline onended="">
-                    <source id="comparison-src1" src="videos/three-people/input.mp4" type="video/mp4">
-                  </video>
-                  <p id="comparison-caption" style="margin-top: 5px; text-align: center; width: 100%">Input</p>
-                </div>
-                <div class="column">
-                  <video id="comparison-player2" autoplay muted defaultMuted playsinline webkit-playsinline  onended="loadComparison()">
-                    <source id="comparison-src2" src="videos/three-people/ours.mp4" type="video/mp4">
-                  </video>
-                  <p style="margin-top: 5px; text-align: center; width: 100%" class="maggie">MaGGIe</p>
-                </div>
-              </div>
-              <div class="content has-text-left"><b> Example: </b></div>
-              <div class="columns inside has-text-centered is-centered buttons are-normal">
-                <div class="column">
-                  <button class='button btn-comp-video'  onclick="selectComparisonVideo('two-people')">Two people</button>
-                </div>
-                <div class="column">
-                  <button class='button btn-comp-video'  onclick="selectComparisonVideo('three-people')">Three people - On car</button>
-                </div>
-                <div class="column">
-                  <button class='button btn-comp-video'  onclick="selectComparisonVideo('three-people-family')">Three people - Family</button>
-                </div>
-                <div class="column">
-                  <button class='button btn-comp-video'  onclick="selectComparisonVideo('four-people')">Four people</button>
-                </div>
-              </div>
-              <div class="content has-text-left"><b> Compared method: </b></div>
-              <div class="columns inside has-text-centered is-centered buttons are-normal">
-                <div class="column">
-                  <button class='button btn-comp-method'  onclick="selectComparedMethod('input')">Video + XMem masks</button>
-                </div>
-                <div class="column">
-                  <button class='button btn-comp-method'  onclick="selectComparedMethod('instmatt')">InstMatt</button>
-                </div>
-                <div class="column">
-                  <button class='button btn-comp-method'  onclick="selectComparedMethod('sparsemat_hr')">SparseMat</button>
-                </div>
-                <div class="column">
-                  <button class='button btn-comp-method'  onclick="selectComparedMethod('mgm_single_tcvom')">MGM+TCVOM</button>
-                </div>
-                <div class="column">
-                  <button class='button btn-comp-method'  onclick="selectComparedMethod('mgm_stacked_tcvom')">MGM*+TCVOM</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <!-- For the Generalization ability -->
-    <section class="hero">
-      <div class="hero-body">
-        <div class="container is-max-desktop">
-          <div class="columns is-centered">
-            <div class="column has-text-centered">
-              <h2 class="title is-3">Generalization ability</h2>
-              <div class="content has-text-justified">
-                <p>
-                  Training only on human matting datasets, our method showcases its versatility by working well on various objects.
-                </p>
-              </div>
-              <div class="container" id="glide-container">
-                <div class="glide" id="generalization">
+              <div class="container" id="glide-container" style="position: relative;">
+                <div class="glide" id="qual_results1">
                   <div data-glide-el="track" class="glide__track">
                     <ul class="glide__slides">
                       <li class="glide__slide">
-                        <img src="images/generalization_1.png">
+                        <img src="images/qual1.png">
                       </li>
                       <li class="glide__slide">
-                        <img src="images/generalization_2.png">
+                        <img src="images/qual2.png">
                       </li>
                       <li class="glide__slide">
-                        <img src="images/generalization_3.png">
+                        <img src="images/qual3.png">
                       </li>
                       <li class="glide__slide">
-                        <img src="images/generalization_4.png">
-                      </li>
-                      <li class="glide__slide">
-                        <img src="images/generalization_5.png">
+                        <img src="images/qual4.png">
                       </li>
                     </ul>
                   </div>
-      
-                  <div class="glide__arrows" data-glide-el="controls">
-                    <span class="glide__arrow glide__arrow--left" data-glide-dir="<"><img src="dist/arrow-left-circle-fill.svg"/></span>
-                    <span class="glide__arrow glide__arrow--right" data-glide-dir=">"><img src="dist/arrow-right-circle-fill.svg"/></span>
+                  <div class="glide__arrows" data-glide-el="controls" style="position: absolute; width: 100%; top: 50%; transform: translateY(-50%); pointer-events: none;">
+                    <span class="glide__arrow glide__arrow--left" data-glide-dir="<" style="position: absolute; left: -4rem; pointer-events: auto;"><img src="dist/arrow-left-circle-fill.svg"/></span>
+                    <span class="glide__arrow glide__arrow--right" data-glide-dir=">" style="position: absolute; right: -4rem; pointer-events: auto;"><img src="dist/arrow-right-circle-fill.svg"/></span>
                   </div>
-                  <div class="glide__bullets" data-glide-el="controls[nav]">
-                    <span class="glide__bullet" data-glide-dir="=0"></span>
-                    <span class="glide__bullet" data-glide-dir="=1"></span>
-                    <span class="glide__bullet" data-glide-dir="=2"></span>
-                    <span class="glide__bullet" data-glide-dir="=3"></span>
-                    <span class="glide__bullet" data-glide-dir="=4"></span>
+                </div>
+              </div>
+              <div class="content has-text-justified">
+                <p>
+                  The new refined text helps resolving the ambiguity in the benchmarks, the model can now retrieve the correct target image:
+                </p>
+              </div>
+              <div class="container" id="glide-container" style="position: relative;">
+                <div class="glide" id="qual_results2">
+                  <div data-glide-el="track" class="glide__track">
+                    <ul class="glide__slides">
+                      <li class="glide__slide">
+                        <img src="images/ref_qual1.png">
+                      </li>
+                      <li class="glide__slide">
+                        <img src="images/ref_qual2.png">
+                      </li>
+                      <li class="glide__slide">
+                        <img src="images/ref_qual3.png">
+                      </li>
+                      <li class="glide__slide">
+                        <img src="images/ref_qual4.png">
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="glide__arrows" data-glide-el="controls" style="position: absolute; width: 100%; top: 50%; transform: translateY(-50%); pointer-events: none;">
+                    <span class="glide__arrow glide__arrow--left" data-glide-dir="<" style="position: absolute; left: -4rem; pointer-events: auto;"><img src="dist/arrow-left-circle-fill.svg"/></span>
+                    <span class="glide__arrow glide__arrow--right" data-glide-dir=">" style="position: absolute; right: -4rem; pointer-events: auto;"><img src="dist/arrow-right-circle-fill.svg"/></span>
                   </div>
                 </div>
               </div>
@@ -580,23 +330,13 @@
     <section class="section" id="BibTeX">
       <div class="container is-max-desktop content">
         <h2 class="title">BibTeX</h2>
-        <pre><code>@InProceedings{huynh2024maggie,
-    author    = {Huynh, Chuong and Oh, Seoung Wug and and Shrivastava, Abhinav and Lee, Joon-Young},
-    title     = {MaGGIe: Masked Guided Gradual Human Instance Matting},
+        <pre><code>@InProceedings{huynh2025collm,
+    author    = {Huynh, Chuong and Yang, Jinyu and Tawari, Ashish and Shah, Mubarak and Tran, Son and Hamid, Raffay and Chilimbi, Trishul and Shrivastava, Abhinav},
+    title     = {CoLLM: A Large Language Model for Composed Image Retrieval},
     booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-    year      = {2024}
+    year      = {2025}
 }</code>
         </pre>
-      </div>
-    </section>
-    <section class="section" id="BibTeX">
-      <div class="container is-max-desktop content">
-        <h2 class="title">Acknownledgement</h2>
-        <div class="content has-text-justified">
-          <p>
-            We thank <a href="https://www.linkedin.com/in/markuswoodson">Markus Woodson</a> for his early discussions and feedback on the project. We also thank the anonymous reviewers for their valuable comments and suggestions. I am grateful to the support of my wife <a href="https://qqphung.github.io/" target="_blank">Quynh</a> in proofreading the paper.
-          </p>
-        </div>
       </div>
     </section>
     <footer class="footer">
@@ -605,7 +345,7 @@
           <div class="column is-8">
             <div class="content">
               <p>
-                This website borrows the source code from <a href="https://nerfies.github.io/">nerfies</a> and <a href="https://text-video-edit.github.io/">text-video-edit</a>.
+                This website borrows the source code from <a href="https://nerfies.github.io/">nerfies</a>.
               </p>
             </div>
           </div>
@@ -627,14 +367,14 @@
       Cocoen.parse(document.body);
     </script>
     <script>
-      glide = new Glide('#dataset-him50k', {
+      glide = new Glide('#qual_results1', {
         type: "carousel",
-        perView: 1.27,
+        perView: 1.0,
         focusAt: "center",
-        autoplay: 2000,
+        autoplay: 5000,
         hoverpause: true
       }).mount();
-      glide = new Glide('#generalization', {
+      glide = new Glide('#qual_results2', {
         type: "carousel",
         perView: 1.0,
         focusAt: "center",
